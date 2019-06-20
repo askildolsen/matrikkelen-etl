@@ -30,7 +30,7 @@ namespace matrikkelen_etl
                 {
                     using (var context = new MatrikkelenContext())
                     {
-                        foreach(var vegadressebruksenhet in context.VegadresseBruksenheter.Where(v => v.adresse_kommunenummer == "5001").AsNoTracking())
+                        foreach(var vegadressebruksenhet in context.VegadresseBruksenheter.AsNoTracking())
                         {
                             bulkInsert.Store(
                                 vegadressebruksenhet,
