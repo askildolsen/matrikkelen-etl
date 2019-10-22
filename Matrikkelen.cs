@@ -18,7 +18,7 @@ namespace matrikkelen_etl
         }
     }
 
-    [Table("vegadressebruksenhet")]
+    [Table("vegadressebruksenhet", Schema="matrikkelenadresseleilighetsniva")]
     [JsonObject(ItemNullValueHandling = NullValueHandling.Ignore)]
     public class VegadresseBruksenhet
     {

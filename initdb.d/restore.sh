@@ -1,1 +1,1 @@
-pg_restore -U matrikkelen -O -d matrikkelen /tmp/matrikkelen.backup
+pg_restore -U matrikkelen -O -d matrikkelen /tmp/MatrikkelenAdresseLeilighetsniva.backup

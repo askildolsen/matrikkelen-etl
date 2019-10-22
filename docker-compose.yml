@@ -13,7 +13,7 @@ services:
       - db_data:/var/lib/postgresql/data
       - ./initdb.d/restore.sh:/docker-entrypoint-initdb.d/xrestore.sh
       - ./initdb.d/rename.sql:/docker-entrypoint-initdb.d/xschemarename.sql
-      - ./matrikkelen.tmp/Basisdata_0000_Norge_25833_MatrikkelenAdresseLeilighetsniva_PostGIS.backup:/tmp/matrikkelen.backup
+      - ./matrikkelen.tmp/Basisdata_0000_Norge_25833_MatrikkelenAdresseLeilighetsniva_PostGIS.backup:/tmp/MatrikkelenAdresseLeilighetsniva.backup
     restart: always
 
 volumes:
