@@ -2,16 +2,14 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
     <RootNamespace>matrikkelen_etl</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="2.2.0" />
-    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL.NetTopologySuite" Version="2.2.0" />
-    <PackageReference Include="NetTopologySuite" Version="1.15.2" />
-    <PackageReference Include="ProjNET4GeoAPI" Version="1.4.1" />
-    <PackageReference Include="RavenDB.Client" Version="4.2.4" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="5.0.0" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL.NetTopologySuite" Version="5.0.0" />
+    <PackageReference Include="RavenDB.Client" Version="5.0.4" />
   </ItemGroup>
 
   <ItemGroup>
