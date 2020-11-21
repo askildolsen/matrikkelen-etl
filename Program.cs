@@ -21,11 +21,6 @@ namespace matrikkelen_etl
 
                 var stopwatch = Stopwatch.StartNew();
 
-                if (store.Maintenance.Send(new GetIndexOperation("MatrikkelenResourceIndex")) == null)
-                {
-                    new MatrikkelenResourceModel.MatrikkelenResourceIndex().Execute(store);
-                }
-
                 using (BulkInsertOperation bulkInsert = store.BulkInsert())
                 {
                     using (var context = new MatrikkelenContext())
@@ -40,6 +35,8 @@ namespace matrikkelen_etl
                         }
                     }
                 }
+
+                new MatrikkelenResourceModel.MatrikkelenResourceIndex().Execute(store);
 
                 stopwatch.Stop();
                 Console.WriteLine(stopwatch.Elapsed);
